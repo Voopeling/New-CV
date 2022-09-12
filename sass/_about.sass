@@ -1,0 +1,381 @@
+.about
+    &__wrapper
+        max-width: 1440px
+        background-color: rgba(1, 17, 18, 1)
+        display: flex
+        justify-content: space-between
+        column-gap: 20px
+        .about__sidebar
+            max-width: 450px
+            min-height: 840px
+            flex: 1
+            overflow: hidden
+            &-img
+                max-width: 330px
+                position: relative
+                margin: 54px 0 0 65px
+                max-height: 330px
+                img
+                    border-radius: 50%
+                    width: 100%
+                    position: relative
+                img.animated
+                    transition: all 1s
+                    box-shadow: -8px 5px 14px 0 rgba(254, 136, 56, 1)
+            &-img:before
+                content: ''
+                display: block
+                position: absolute
+                background-color: rgba(1, 17, 18, 1)
+                width: calc(100% + 1px)
+                height: calc(100% + 1px)
+                z-index: 5
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                border-radius: 50%
+                transition: all 1s
+                transition-delay: .2s
+                opacity: 1
+            &-img.animated:before
+                opacity: 0
+            &-skills
+                max-width: 300px
+                height: 171px
+                margin: 50px 0 35px 75px
+                h3
+                    color: #fff
+                    font-family: 'bahnschrift'
+                    text-transform: uppercase
+                    font-size: 20px
+                    font-weight: 500
+                .skills__wrapper
+                    height: 125px
+                    max-width: 300px
+                    display: flex
+                    justify-content: space-between
+                    .skills__name
+                        color: rgba(254, 136, 56, 1)
+                        font-family: 'bahnschrift'
+                        text-transform: uppercase
+                        font-size: 15px
+                        font-weight: 100
+                        margin: 0
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        height: 100%
+                        max-width: 80px
+                        flex: 1
+                        li
+                            height: 15px
+                    .skills__point
+                        max-width: 204px
+                        flex: 1
+                        margin: 0
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        div
+                            height: 14px
+                            display: flex
+                            justify-content: space-between
+                            span
+                                display: block
+                                content: ''
+                                width: 8px
+                                height: 14px
+                                background-color: rgba(254, 136, 56, 0.4)
+                                border-radius: 3px
+                            .skills__active.animated
+                                background-color: rgba(254, 136, 56, 1)
+            p
+                color: #fff
+                font-family: 'bahnschrift'
+                font-size: 14px
+                margin: 0 0 0 75px
+                max-width: 220px
+            &-contacts
+                margin: 30px 0 0 75px
+                height: 90px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                &-item
+                    height: 25px
+                    display: flex
+                    align-items: center
+                    width: fit-content
+                    p
+                        margin: 0 0 0 12px
+                        color: rgba(153, 153, 153, 1)
+
+.about__content
+    max-width: 990px
+    flex: 1
+    position: relative
+    h4
+        color: rgba(254, 136, 56, 1)
+        margin: 0 0 0 30px
+        font-family: 'bahnschrift'
+        font-weight: 700
+        font-size: 20px
+        text-transform: uppercase
+    p
+        color: #fff
+        margin: 20px 0 0 30px
+        font-family: 'bahnschrift'
+        font-size: 20px
+    &-top:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 4px
+        background: linear-gradient(to right, rgba(254, 136, 56, 1) 70%, rgba(254, 136, 56, 0))
+        top: 53px
+    &-top:after, &-top-hobby:after
+        content: ''
+        position: absolute
+        width: 4px
+        height: 275px
+        background: rgba(254, 136, 56, 1)
+        top: 53px
+    &-top
+        display: flex
+        margin: 30px 0 0 0
+        min-height: 270px
+        &-hobby
+            padding: 0 10px 0 0
+        &-about:before, &-hobby:before
+            content: ''
+            position: absolute
+            width: 16px
+            height: 16px
+            background: rgba(254, 136, 56, 1)
+            border-radius: 50%
+            top: 18px
+            left: -6px
+        &-about
+            max-width: 551px
+            flex: 1
+            position: relative
+        &-hobby
+            position: relative
+        &-hobby:after
+            height: 110px
+            background: linear-gradient(to bottom, rgba(254, 136, 56, 1), rgba(254, 136, 56, 0))
+            top: 33px
+    &-center:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 4px
+        background: linear-gradient(to right, rgba(254, 136, 56, 1) 70%, rgba(254, 136, 56, 0))
+        top: 325px
+    &-center:after, &-center-qualities:after
+        content: ''
+        position: absolute
+        width: 4px
+        height: 300px
+        background: rgba(254, 136, 56, 1)
+        top: 326px
+    &-center
+        min-height: 300px
+        display: flex
+        &-education:before, &-qualities:before
+            content: ''
+            position: absolute
+            width: 16px
+            height: 16px
+            background: rgba(254, 136, 56, 1)
+            border-radius: 50%
+            top: 19px
+            left: -6px
+        &-education
+            position: relative
+            max-width: 551px
+            flex: 1
+            p
+                span
+                    color: rgba(254, 136, 56, 1)
+        &-qualities
+            position: relative
+            padding: 0 10px 0 0
+        &-qualities:after
+            height: 275px
+            top: 19px
+            background: linear-gradient(to bottom, rgba(254, 136, 56, 1), rgba(254, 136, 56, 0))
+    &-bottom
+        min-width: 390px
+        position: absolute
+        &-languages:after
+            content: ''
+            position: absolute
+            width: 16px
+            height: 16px
+            background: rgba(254, 136, 56, 1)
+            border-radius: 50%
+            top: 19px
+            left: -6px
+        &-languages
+            &-wrapper
+                display: flex
+                justify-content: space-between
+                margin: 30px 0 0 30px
+                div
+                    width: 100px
+                    position: relative
+                    h5
+                        color: #fff
+                        font-size: 16px
+                        font-family: 'bahnschrift'
+                        position: absolute
+                        margin: 0
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    .languages__svg-rus, .languages__svg-bel, .languages__svg-en
+                        transform: rotate(-90deg)
+                        .languages__svg-rus-active, .languages__svg-bel-active, .languages__svg-en-active
+                            stroke-dasharray: 290
+                            stroke-dashoffset: 290
+                            transition: all 1s
+                        .languages__svg-rus-active.animated
+                            stroke-dashoffset: 70
+                        .languages__svg-bel-active.animated
+                            stroke-dashoffset: 110
+                        .languages__svg-en-active.animated
+                            stroke-dashoffset: 240
+    &-bottom:before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 4px
+        background: linear-gradient(to right, rgba(254, 136, 56, 1) 70%, rgba(254, 136, 56, 0))
+        top: 25px
+    &-bottom:after
+        content: ''
+        position: absolute
+        width: 4px
+        height: 100%
+        background: linear-gradient(to bottom, rgba(254, 136, 56, 1), rgba(254, 136, 56, 0))
+        top: 28px
+
+@media screen and ( max-width: 1000px )
+    .about__wrapper
+        min-height: 1000px
+    .about__content
+        &-top
+            flex-direction: column
+            row-gap: 15px
+            &-hobby:after
+                height: 4px
+                background: linear-gradient(to right, rgb(254, 136, 56) 70%, rgba(254, 136, 56, 0)) 70%
+                top: 24px
+                width: 100%
+        &-center
+            flex-direction: column
+            margin: 15px 0 0 0
+            row-gap: 15px
+            &-qualities:after
+                background: linear-gradient(to right, rgb(254, 136, 56) 70%, rgba(254, 136, 56, 0)) 70%
+                width: 100%
+                height: 4px
+                top: 25px
+        &-center:before
+            top: 417px
+        &-center:after
+            height: 490px
+        &-bottom:before
+            width: 521px
+        &-bottom
+            margin: 15px 0 0 0
+
+@media screen and ( max-width: 887px )
+    .about__content
+        &-center:after
+            height: 520px
+
+@media screen and ( max-width: 848px )
+    .about__wrapper
+        .about__sidebar
+            padding: 0 0 0 60px
+        flex-direction: column
+        min-height: 1400px
+        .about__content
+            min-height: 975px
+            &-top
+                &-about:before
+                    display: none
+                &-hobby:before
+                    display: none
+            &-top:after
+                display: none
+            &-center
+                &-education:before
+                    display: none
+                &-qualities:before
+                    display: none
+            &-center:after
+                display: none
+            &-bottom
+                min-width: 100%
+                &-languages:after
+                    display: none
+                &-languages
+                    &-wrapper
+                        max-width: 390px
+            &-bottom:after
+                display: none
+            &-bottom:before
+                width: 100%
+
+@media screen and ( max-width: 550px )
+    .about__wrapper
+        .about__sidebar
+            padding: 0
+            &-img
+                margin: 54px 0 0 40px
+            &-skills
+                margin: 50px 0 35px 30px
+            p
+                margin: 0 0 0 30px
+            &-contacts
+                margin: 30px 0 0 30px
+        .about__content
+            h4
+                text-align: center
+                margin: 0
+            p
+                font-size: 18px
+            &-center:before
+                top: 392px
+
+@media screen and ( max-width: 450px )
+    .about
+        &__wrapper
+            .about__sidebar
+                min-height: 660px
+                &-img
+                    max-width: 200px
+                    margin: 20px auto 40px
+            .about__content
+                min-height: 870px
+                p
+                    font-size: 16px
+                &-center:before
+                    top: 362px
+                &-bottom
+                    &-languages
+                        h5
+                            font-size: 13px
+                        &-wrapper
+                            max-width: calc(100% - 20px)
+                            margin: 30px auto 0
+
+@media screen and ( max-width: 334px )
+    .about__wrapper
+        .about__content
+            min-height: 915px
+            &-center:before
+                top: 380px

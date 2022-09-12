@@ -1,0 +1,26 @@
+.pointer
+    position: fixed
+    top: 50%
+    left: -100px
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 10px
+    pointer-events: none
+    box-sizing: border-box
+    z-index: 9998
+    transition-property: width, height, background
+    transition-duration: .5s
+    transition-timing-function: cubic-bezier(.19, .94, .336, 1)
+    border-radius: 50%
+    background: rgb(254, 136, 56)
+    overflow: hidden
+    display: none
+.pointer.large
+    width: 25px
+    height: 25px
+    background: rgba(239,13,51,0)
+    box-shadow: 0 0 30px rgb(254, 136, 56)
+
+@media screen and ( max-width: 848px )
+    .pointer
+        display: none

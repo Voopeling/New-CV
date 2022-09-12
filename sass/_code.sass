@@ -1,0 +1,84 @@
+.code
+    .title-anim:before
+        background: rgba(1, 17, 18, 1)
+    &__wrapper
+        min-height: 800px
+        background: rgba(1, 17, 18, 1)
+        &-title
+            line-height: 60px
+            padding: 100px 0 0 0
+        .code__slider
+            max-width: 880px
+            min-height: 480px
+            margin: 50px auto 0
+            color: #fff
+            overflow: hidden
+            position: relative
+            .swiper-wrapper
+                display: flex
+                .swiper-slide
+                    display: flex
+                    justify-content: center
+                    flex-shrink: 0
+                    width: 100%
+                    pre
+                        font-size: 25px
+                        .purple
+                            color: #a668b3
+                        .orange
+                            color: #c08e42
+            .swiper-pagination
+                display: flex
+                justify-content: center
+                column-gap: 15px
+                align-items: center
+                .swiper-pagination-bullet
+                    display: block
+                    content: ''
+                    width: 15px
+                    height: 15px
+                    background-color: rgba(254, 136, 56, 0.4)
+                    border-radius: 50%
+                    transition: all .3s
+                .swiper-pagination-bullet-active
+                    display: block
+                    content: ''
+                    width: 20px
+                    height: 20px
+                    background-color: rgba(254, 136, 56, 1)
+                    border-radius: 50%
+
+@media screen and ( max-width: 848px )
+    .code
+        &__wrapper
+            min-height: 500px
+            .code__slider
+                width: 100%
+                .swiper-wrapper
+                    .swiper-slide
+                        pre
+                            font-size: 20px 
+
+@media screen and ( max-width: 634px )
+    .code
+        &__wrapper
+            min-height: 400px
+            .code__slider
+                min-height: 300px
+                .swiper-wrapper
+                    .swiper-slide
+                        pre
+                            font-size: 15px 
+
+@media screen and ( max-width: 468px )
+    .code
+        &__wrapper
+            min-height: 400px
+            &-title
+                padding: 50px 0 0 0
+            .code__slider
+                min-height: 200px
+                .swiper-wrapper
+                    .swiper-slide
+                        pre
+                            font-size: 10px 

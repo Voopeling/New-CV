@@ -1,0 +1,51 @@
+.contacts
+    .title-anim:before
+        background: rgba(0, 12, 13, 1)
+    &__wrapper
+        min-height: 200px
+        background: rgba(0, 12, 13, 1)
+        &-title
+            font-size: 27px !important
+            padding: 30px 0 0 0
+        .contacts__list
+            max-width: 820px
+            margin: 30px auto 0 
+            display: flex
+            justify-content: space-between
+            &-item
+                max-width: 100px
+                height: 74px
+                flex: 1
+                a
+                    height: 100%
+                    display: block
+                    position: relative
+                    img
+                        position: absolute
+                        left: 50%
+                        transform: translateX(-50%)
+                    p
+                        position: absolute
+                        margin: 0
+                        left: 50%
+                        transform: translateX(-50%)
+                        font-size: 14px
+                        line-height: 30px
+                        bottom: 0
+            &-item:hover
+                a
+                    img
+                        filter: invert(55%) sepia(87%) saturate(490%) hue-rotate(333deg) brightness(102%) contrast(99%)
+                    p
+                        filter: invert(55%) sepia(87%) saturate(490%) hue-rotate(333deg) brightness(102%) contrast(99%)
+
+@media screen and ( max-width: 550px )
+    .contacts
+        &__wrapper
+            .contacts__list
+                max-width: 300px
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                padding-bottom: 30px
+                .location
+                    display: none

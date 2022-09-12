@@ -1,0 +1,81 @@
+@import preview.sass
+@import header.sass
+@import about.sass
+@import portfolio.sass
+@import code.sass
+@import contacts.sass
+@import footer.sass
+@import 'animations'
+@import 'pointer'
+
+@font-face
+    font-family: 'bahnschrift'
+    src: url('../fonts/Bahnschrift.ttf')
+@font-face
+    font-family: 'bankgothicmdbt_m'
+    src: url('../fonts/bankgothicmdbt_medium.otf')
+    font-weight: 500
+.html
+    scroll-behavior: smooth
+    overflow: hidden
+*
+    cursor: none
+body
+    margin: 0
+    font-family: 'bankgothicmdbt_m'
+    background: black
+.body__wrapper
+    margin: 0 auto
+    max-width: 1440px
+    overflow-x: hidden
+    overflow-y: hidden
+    position: relative
+    &-load
+        position: absolute
+        width: 100%
+        height: 100vh
+        z-index: 9999
+        background: black
+        transform: translate(0%, 0%)
+        transition: all 1s
+        div
+            position: relative
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
+            width: 100px
+            margin: 0
+            h5
+                margin: 0
+                position: absolute
+                left: 50%
+                top: 48%
+                transform: translate(-50%, -50%)
+                color: #fff
+                font-size: 16px
+            .body__wrapper-load-loading
+                animation: 1.5s linear 0s normal none infinite running rot
+                &-active
+                    stroke-dasharray: 290
+                    stroke-dashoffset: 230
+            @keyframes rot
+                0%
+                    transform: rotate(0deg)
+                100%
+                    transform: rotate(360deg)
+
+ul
+    padding: 0
+    list-style: none
+a
+    text-decoration: none
+    color: #fff
+
+.title
+    text-transform: uppercase
+    color: rgba(254, 136, 56, 1)
+    margin: 0
+    text-align: center
+    font-size: 35px
+    margin: auto
+    width: fit-content

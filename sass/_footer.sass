@@ -1,0 +1,42 @@
+.footer
+    &__wrapper
+        background: #000
+        height: 45px
+        display: flex
+        align-items: center
+        justify-content: center
+        &-content
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: calc(100% - 80px)
+            &-item
+                font-size: 14px
+                text-transform: uppercase
+                width: 175px
+                display: flex
+            &-item:nth-child(2)  
+                justify-content: center
+            &-item:nth-child(3)
+                justify-content: flex-end
+            &-item:hover
+                filter: invert(55%) sepia(87%) saturate(490%) hue-rotate(333deg) brightness(102%) contrast(99%)
+
+@media screen and ( max-width: 600px )
+    .footer
+        &__wrapper
+            &-content
+                width: calc(100% - 30px)
+                &-item
+                    font-size: 12px
+
+@media screen and ( max-width: 450px )
+    .footer
+        &__wrapper
+            &-content
+                column-gap: 20px
+                &-item
+                    font-size: 8px
+                &-item:nth-child(3)
+                    img 
+                        height: 20px

@@ -1,0 +1,117 @@
+.portfolio
+    &__wrapper
+        max-width: 1440px
+        flex: 1
+        background: rgba(14, 24, 25, 1)
+        h1
+            padding: 68px 0 0 0
+        &-content
+            margin: 40px 0 0 0
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            row-gap: 60px
+            padding-bottom: 60px
+            &-item
+                display: flex
+                img
+                    max-width: 770px
+                    overflow: hidden
+                    position: relative
+                    left: -3px
+                    max-height: 383.5px
+                div
+                    max-width: 591px
+                    color: #fff
+                    p
+                        margin: 60px 0 0 60px
+                        font-family: 'bahnschrift'
+                        font-size: 20px
+                        font-weight: 200
+                        line-height: 40px
+                    .button-box
+                        margin: 60px 0 0 60px
+                        span:after
+                            content: ""
+                            position: absolute
+                            height: 1px
+                            width: 20px
+                            transition: all 0.7s
+                            right: -29px
+                            transform: translateY(-50%) scaleX(0)
+                            transform-origin: right
+                            top: 12px
+                        button:hover
+                            color: rgba(254, 136, 56, 1)
+                            span:before
+                                top: 6px
+                                transform: rotate(45deg)
+                                right: -30px
+                            span:after
+                                background: rgba(254, 136, 56, 1)
+                                transform: translateY(-50%) scaleX(1)
+            .reverse
+                display: flex
+                flex-direction: row-reverse
+                img
+                    left: 0px
+                div
+                    margin: 0 60px 0 0
+                    p
+                        margin: 60px 0 0 15px
+                    .button-box
+                        margin: 60px 0 0 15px
+                        float: right
+
+@media screen and ( max-width: 1200px )
+    .portfolio
+        &__wrapper
+            &-content
+                &-item
+                    div
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        padding: 0 10px 0 0 
+                        p
+                            margin: 0 0 0 60px
+                            line-height: 30px
+                        .button-box
+                            margin: 20px 0 0 60px
+                .reverse
+                    div
+                        padding: 0 
+                        p
+                            margin: 0 0 0 15px
+                        .button-box
+                            margin: 20px 0 0 15px
+
+@media screen and ( max-width: 848px )
+    .portfolio
+        &__wrapper
+            &-content
+                &-item
+                    flex-direction: column !important
+                    img
+                        margin: 0 auto 
+                        width: 100%
+                    div
+                        max-width: 575px
+                        padding: 0
+                        margin: 30px auto !important
+                        p
+                            margin: 0 auto !important
+                
+
+
+@media screen and ( max-width: 450px )
+    .portfolio
+        &__wrapper
+            &-content
+                row-gap: 20px
+                padding-bottom: 0
+                &-item
+                    div
+                        padding: 0 10px !important
+                        p
+                            font-size: 16px
